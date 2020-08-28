@@ -1,6 +1,7 @@
 from PIL import Image
 from os import listdir, walk, getcwd, remove
 from sys import argv
+from screeninfo import get_monitors
 
 def get_bmp_files(new_size):
     extensions = ["png", "jpg"]
@@ -22,4 +23,9 @@ def get_bmp_files(new_size):
 
 
 if __name__ == '__main__':
-    get_bmp_files((800, 500))
+    mon = get_monitors()
+    for n in mon:
+        w = n.width
+        h = n.height
+    else:
+        get_bmp_files((w, h))

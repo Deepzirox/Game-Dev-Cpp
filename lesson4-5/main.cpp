@@ -25,12 +25,6 @@ int main()
     if (!engine.loadMediaWindow("👽👽👽 -> LESSON #4", axis, dim, "visible"))
         exit(-1);
 
-    engine.selfWindowSurface(); // engine gets her own windows surface
-
-    //engine.image_ssurface(background[0]);
-
-    // pre-loaded bmp
-
 
     engine.event_loop();
 
