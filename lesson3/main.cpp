@@ -29,7 +29,6 @@ int main()
 
     engine.event_loop();
 
-
     engine.destroy();
 
     return (0);
