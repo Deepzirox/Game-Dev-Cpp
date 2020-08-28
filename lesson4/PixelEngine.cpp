@@ -85,16 +85,16 @@ bool PixelEngine::loadMediaWindow(char *title, vector<int> axis, vector<int> dim
         return false;
     }
 
-    this->keypress_img[ KEY_UP ] = loader_bmp_Surf("bmp/back1.bmp");
-    this->keypress_img[ KEY_DOWN ] = loader_bmp_Surf("bmp/back2.bmp");
-    this->keypress_img[ KEY_LEFT ] = loader_bmp_Surf("bmp/back4.bmp");
-    this->keypress_img[ KEY_RIGHT ] = loader_bmp_Surf("bmp/back0.bmp");
-    this->keypress_img[ KEY_DEFAULT ] = loader_bmp_Surf("bmp/back5.bmp");
-    if (!this->keypress_img[ KEY_UP ] ||
-        !this->keypress_img[ KEY_DOWN ] ||
-        !this->keypress_img[ KEY_RIGHT ] ||
-        !this->keypress_img[ KEY_LEFT ] ||
-        !this->keypress_img[ KEY_DEFAULT ])
+    this->keypress_img[KEY_UP] = loader_bmp_Surf("bmp/back1.bmp");
+    this->keypress_img[KEY_DOWN] = loader_bmp_Surf("bmp/back2.bmp");
+    this->keypress_img[KEY_LEFT] = loader_bmp_Surf("bmp/back4.bmp");
+    this->keypress_img[KEY_RIGHT] = loader_bmp_Surf("bmp/back0.bmp");
+    this->keypress_img[KEY_DEFAULT] = loader_bmp_Surf("bmp/back5.bmp");
+    if (!this->keypress_img[KEY_UP]    ||
+        !this->keypress_img[KEY_DOWN]  ||
+        !this->keypress_img[KEY_RIGHT] ||
+        !this->keypress_img[KEY_LEFT]  ||
+        !this->keypress_img[KEY_DEFAULT])
             return (false);
 
     printf("ventana creada satisfactoriamente\n");
